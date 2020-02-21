@@ -49,20 +49,12 @@ export default class App extends Component<{}, AppState> {
         initIndex++;
       }
     });
-    const finalPercent = percentBattery.reduce(
-      (val: number, totalEntry: number) => {
+    const finalPercent =
+      percentBattery.reduce((val: number, totalEntry: number) => {
         return totalEntry + val;
-      },
-      0
-    );
-    const finalTime = Object.values(batteryReadings)[0][
-      Object.values(batteryReadings)[0].length - 1
-    ].timestamp;
-    console.log(
-      finalPercent /
-        (Math.abs(new Date(timeSt).getTime() - new Date(finalTime).getTime()) /
-          36e5)
-    );
+      }, 0) / percentBattery.length;
+
+    console.log(finalPercent);
   };
   render() {
     return <div>Hi</div>;
