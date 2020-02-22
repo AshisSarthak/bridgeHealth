@@ -155,6 +155,7 @@ export default class App extends Component<{}, AppState> {
                 key={index}
                 school={school}
                 updateSchool={this.setSchool}
+                noOfRedDevices={school.noOfRedDevices}
               />
             );
           })}

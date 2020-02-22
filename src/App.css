@@ -24,6 +24,8 @@
   margin-bottom: 20px;
   border-right: 6px solid red;
   color: red;
+  display: flex;
+  justify-content: space-between;
 }
 .device {
   width: 95%;
@@ -51,4 +53,20 @@
 .good {
   color: white;
   background-color: forestgreen;
+}
+.label {
+  font-size: 13px;
+}
+.schoolName {
+  font-size: 26px;
+  color: #666;
+}
+.deviceNo {
+  text-align: center;
+}
+.deviceCount {
+  font-size: 32px;
+}
+.deviceLabel {
+  font-size: 12px;
 }

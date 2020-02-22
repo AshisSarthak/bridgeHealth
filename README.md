@@ -14,3 +14,5 @@ I have tried to give a good look and feel but was not able to complete with in 3
 Another thing I assumed was the border health percent of each device to be 10. Just to ensure have a good number of devices.
 
 This solution is not complete as I thought it would be but with more time I could do better.
+I have tweaked the UI a bit to look good.
+I have not handled any edge cases as of now and the unit tested given are basic an does not cover a lot.

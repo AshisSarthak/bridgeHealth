@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import { HEALTH_BORDER } from "./App";
 
 export interface DeviceProps {
   name: string;
@@ -19,7 +18,7 @@ export const Device: React.FC<DeviceProps> = (props: DeviceProps) => {
       </div>
       <div className="devicePer">
         <div className="label ">Device Health </div>
-        {props.finalPercent}
+        {props.finalPercent.toFixed(2)}%
       </div>
     </div>
   );
