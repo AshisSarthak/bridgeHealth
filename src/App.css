@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+.container {
+  display: flex;
+  flex: 0 0 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.schoolDetails {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex: 0 0 50%;
+  padding: 10px;
+}
+.deviceDetails {
+  width: 50%;
+}
+.deviceContainer {
+  background-color: #eee;
+}
+
+.schoolData {
+  padding: 20px;
+  background: #eee;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-right: 6px solid red;
+  color: red;
+}
+.device {
+  width: 95%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.deviceName {
+  display: flex;
+  justify-content: space-between;
+}
+.devicePer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.bad {
+  background-color: indianred;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.good {
+  color: white;
+  background-color: forestgreen;
 }
